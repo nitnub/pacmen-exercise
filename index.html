@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PacMan Party</title>
+
+    <!-- add retro game font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      button {
+        font-family: 'Press Start 2P', cursive;
+        background-color: black;
+        color: rgb(90, 111, 248);
+        cursor: pointer;
+      }
+
+      .start {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="game">
+      <button onclick="makeOne()" width="200" height="30">Add PacMan</button>
+      <button class="start" onclick="update()" width="200" height="30">
+        Start
+      </button>
+    </div>
+    <script src="./pacmen.js"></script>
+  </body>
+</html>
